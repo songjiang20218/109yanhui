@@ -3,6 +3,7 @@ const header = document.querySelector('[data-header]');
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const nav = document.querySelector('[data-nav]');
 const heroMedia = document.querySelector('.hero-media');
+const isChinese = document.documentElement.lang.toLowerCase().startsWith('zh');
 
 document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = new Date().getFullYear();
@@ -21,7 +22,9 @@ window.addEventListener('scroll', updateHeader, { passive: true });
 menuToggle?.addEventListener('click', () => {
   const isOpen = body.classList.toggle('nav-open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
-  menuToggle.querySelector('.sr-only').textContent = isOpen ? '关闭导航' : '打开导航';
+  menuToggle.querySelector('.sr-only').textContent = isOpen
+    ? (isChinese ? '关闭导航' : 'Close navigation')
+    : (isChinese ? '打开导航' : 'Open navigation');
 });
 
 nav?.querySelectorAll('a').forEach((link) => {

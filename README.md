@@ -1,12 +1,12 @@
 # 西安星禾云创官网
 
-西安星禾云创网络科技有限公司的 iOS App 研发官网。
+西安星禾云创网络科技有限公司的 iOS App 研发官网，默认为英文版，并保留完整中文版。
 
 - 已有域名：`xhycapps.com`
 - 网站类型：无构建步骤的静态网站
-- 主页：`index.html`
-- 隐私政策：`privacy.html`
-- 使用条款：`terms.html`
+- 英文主页：`index.html`
+- 英文隐私政策 / 条款：`privacy.html` / `terms.html`
+- 中文版：`zh/index.html`、`zh/privacy.html`、`zh/terms.html`
 
 ## 本地预览
 

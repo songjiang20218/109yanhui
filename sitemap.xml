@@ -3,4 +3,7 @@
   <url><loc>https://www.xhycapps.com/</loc><priority>1.0</priority></url>
   <url><loc>https://www.xhycapps.com/privacy.html</loc><priority>0.4</priority></url>
   <url><loc>https://www.xhycapps.com/terms.html</loc><priority>0.4</priority></url>
+  <url><loc>https://www.xhycapps.com/zh/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xhycapps.com/zh/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://www.xhycapps.com/zh/terms.html</loc><priority>0.3</priority></url>
 </urlset>
