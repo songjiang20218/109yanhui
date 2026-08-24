@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title>星禾云创品牌标记</title>
   <rect width="64" height="64" rx="18" fill="#6f8fff"/>
-  <path d="M19 39c7-1 12-5 14-13 5 3 8 9 7 15-7 2-14 1-21-2Z" fill="#171b18"/>
-  <path d="M31 45c1-10 4-18 11-25" fill="none" stroke="#171b18" stroke-width="4" stroke-linecap="round"/>
-  <path d="m44 13 1.8 4.2L50 19l-4.2 1.8L44 25l-1.8-4.2L38 19l4.2-1.8L44 13Z" fill="#171b18"/>
+  <path d="M30 48 C30 39 33 30 40 23" fill="none" stroke="#fffefa" stroke-width="4" stroke-linecap="round"/>
+  <path d="M31 40 C25 40 20 36 18 30 C24 29 30 32 32 38" fill="none" stroke="#fffefa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34 34 C35 28 39 24 45 22 C45 28 41 33 35 35" fill="none" stroke="#fffefa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m46 11 1.7 4.3L52 17l-4.3 1.7L46 23l-1.7-4.3L40 17l4.3-1.7L46 11Z" fill="#fffefa"/>
 </svg>
