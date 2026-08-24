@@ -8,8 +8,8 @@
   --accent-deep: #4563ce;
   --line: rgba(23, 27, 24, 0.18);
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
-  --display: "Songti SC", "Noto Serif SC", STSong, serif;
-  --sans: "Avenir Next", "Helvetica Neue", "PingFang SC", sans-serif;
+  --display: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -22,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .lang-en {
-  --display: "Bodoni 72", Didot, "Iowan Old Style", Georgia, serif;
+  --display: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
   --sans: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
 }
 body.nav-open { overflow: hidden; }
@@ -85,7 +85,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .brand img { grid-row: 1 / 3; filter: none; transition: filter .35s ease; }
 .site-header.is-scrolled .brand img { filter: none; }
-.brand-name { font-family: var(--display); font-weight: 700; letter-spacing: .08em; font-size: 1rem; }
+.brand-name { font-family: var(--display); font-weight: 600; letter-spacing: .12em; font-size: .92rem; }
 .brand-en { margin-top: .28rem; opacity: .65; font-size: .55rem; letter-spacing: .2em; }
 .site-nav { display: flex; align-items: center; gap: clamp(1.25rem, 2.4vw, 2.75rem); }
 .site-nav a { position: relative; font-size: .82rem; text-decoration: none; letter-spacing: .04em; }
@@ -156,8 +156,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-family: var(--display);
   font-size: clamp(2.9rem, 5.4vw, 5.6rem);
   font-weight: 600;
-  line-height: .98;
-  letter-spacing: -.045em;
+  line-height: 1.06;
+  letter-spacing: -.04em;
 }
 .hero h1 span { display: block; animation: rise .9s cubic-bezier(.2,.75,.25,1) both; }
 .hero h1 span:nth-child(1) { animation-delay: .32s; }
@@ -204,12 +204,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-family: var(--display);
   font-weight: 600;
   font-size: clamp(2.25rem, 4.3vw, 4.3rem);
-  line-height: 1.08;
-  letter-spacing: -.04em;
+  line-height: 1.12;
+  letter-spacing: -.028em;
 }
 .intro-body { align-self: end; max-width: 38rem; }
 .intro-body p { color: #59605b; line-height: 1.9; }
-.intro-body .lead { color: var(--ink); font-family: var(--display); font-size: clamp(1.35rem, 2.4vw, 2rem); line-height: 1.55; }
+.intro-body .lead { color: var(--ink); font-family: var(--display); font-size: clamp(1.25rem, 2.1vw, 1.8rem); font-weight: 500; line-height: 1.55; }
 .principles { display: flex; flex-wrap: wrap; gap: .6rem; margin: 2.4rem 0 0; padding: 0; list-style: none; }
 .principles li { padding: .6rem .75rem; border: 1px solid var(--line); font-size: .72rem; }
 
@@ -228,7 +228,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .service-row:hover { color: var(--white); background: var(--accent-deep); padding-left: calc(var(--gutter) + .75rem); }
 .service-no, .service-en { font-size: .58rem; letter-spacing: .18em; opacity: .55; }
-.service-row h3 { margin: 0; font-family: var(--display); font-size: clamp(1.45rem, 2.2vw, 2.25rem); font-weight: 600; }
+.service-row h3 { margin: 0; font-family: var(--display); font-size: clamp(1.35rem, 2vw, 2rem); font-weight: 600; letter-spacing: -.02em; }
 .service-row p { max-width: 31rem; margin: 0; color: rgba(255,255,255,.58); font-size: .87rem; line-height: 1.8; }
 .service-row:hover p { color: rgba(255,255,255,.72); }
 .service-en { justify-self: end; }
@@ -269,7 +269,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .phone-status { position: relative; z-index: 3; display: flex; justify-content: space-between; padding: 1rem 1.1rem .3rem; color: var(--white); font-size: .5rem; }
 .phone-ui { display: flex; flex-direction: column; height: calc(100% - 2rem); padding: 3.5rem 1.1rem 1.5rem; color: var(--white); background: linear-gradient(155deg, #252b26 0%, #111411 70%); }
 .mini-kicker { color: var(--accent); font-size: .45rem; letter-spacing: .15em; }
-.phone-ui strong { margin-top: 1.5rem; font-family: var(--display); font-size: clamp(1rem, 1.7vw, 1.5rem); line-height: 1.4; }
+.phone-ui strong { margin-top: 1.5rem; font-family: var(--display); font-size: clamp(1rem, 1.7vw, 1.5rem); font-weight: 600; line-height: 1.35; }
 .ui-line { height: 1px; margin: auto 0 1rem; background: rgba(255,255,255,.18); }
 .ui-row { display: flex; justify-content: space-between; padding: .65rem 0; border-bottom: 1px solid rgba(255,255,255,.12); font-size: .48rem; }
 .ui-row span:last-child { color: var(--accent); }
@@ -285,7 +285,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .timeline li { min-height: 18rem; padding: 1.4rem 1.7rem; border-top: 1px solid var(--ink); border-right: 1px solid var(--line); }
 .timeline li:first-child { border-left: 1px solid var(--line); }
 .timeline li > span { display: block; margin-bottom: 6rem; color: #747c76; font-size: .62rem; }
-.timeline h3 { margin: 0; font-family: var(--display); font-size: 1.8rem; font-weight: 600; }
+.timeline h3 { margin: 0; font-family: var(--display); font-size: 1.6rem; font-weight: 600; letter-spacing: -.02em; }
 .timeline p { color: #626963; font-size: .8rem; line-height: 1.75; }
 
 .contact { padding: clamp(5rem, 9vw, 9rem) var(--gutter) 3rem; }
@@ -294,7 +294,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact h2 { max-width: 1000px; font-size: clamp(2.4rem, 5vw, 5.2rem); }
 .contact-bottom { display: grid; grid-template-columns: 1fr .4fr; gap: 3rem; align-items: end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.35); }
 .contact-label { display: block; margin-bottom: 1rem; font-size: .6rem; font-weight: 700; letter-spacing: .18em; }
-.contact-mail { display: inline-flex; gap: 1.2rem; font-family: var(--display); font-size: clamp(1.2rem, 2.5vw, 2.5rem); font-weight: 600; text-decoration: none; }
+.contact-mail { display: inline-flex; gap: 1.2rem; font-family: var(--display); font-size: clamp(1.2rem, 2.3vw, 2.2rem); font-weight: 600; letter-spacing: -.02em; text-decoration: none; }
 .contact-mail span { transition: transform .25s ease; }
 .contact-mail:hover span { transform: translate(4px, -4px); }
 .contact-location p { margin: 0; font-size: .85rem; line-height: 1.7; }
@@ -312,7 +312,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .legal-page .brand img { filter: none; }
 .legal-main { width: min(780px, calc(100% - 2 * var(--gutter))); margin: 0 auto; padding: clamp(4rem, 8vw, 8rem) 0; }
 .legal-main .eyebrow { color: #6a716b; }
-.legal-main h1 { margin: 0 0 1rem; font-family: var(--display); font-size: clamp(2.25rem, 4.5vw, 4rem); font-weight: 600; }
+.legal-main h1 { margin: 0 0 1rem; font-family: var(--display); font-size: clamp(2.1rem, 4vw, 3.6rem); font-weight: 600; letter-spacing: -.03em; }
 .legal-main .updated { margin-bottom: 4rem; color: #747b75; font-size: .75rem; }
 .legal-main h2 { margin: 3rem 0 1rem; font-family: var(--display); font-size: 1.45rem; }
 .legal-main p, .legal-main li { color: #535a54; font-size: .9rem; line-height: 1.9; }
